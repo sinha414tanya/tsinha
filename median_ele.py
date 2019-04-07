@@ -5,7 +5,7 @@ def median(n,array):
         array.sort()
         if(n%2==0):
             a=int(n/2)
-            print(array[a])
+            print(array[a-1])
         else:
             a=int(n/2)
             print(array[a])
