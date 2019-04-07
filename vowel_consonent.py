@@ -1,8 +1,11 @@
 ch=input()
 def check(ch):
-    if ch in 'aeiou':
-        print("Vowel")
+    if(ch>="a" and ch<="z") or (ch>="A" and ch<="Z"):
+        if ch in 'aeiou' or ch in "AIEOU":
+            print("Vowel")
+        else:
+            print("Consonent")
     else:
-        print("Consonent")
-
+        print("invalid")
 check(ch)
+
