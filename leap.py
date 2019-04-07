@@ -4,13 +4,13 @@ def check_leap(year):
     if(year%4==0):
         if(year%100==0):
             if(year%400==0):
-                print("Yes")
+                print("yes")
             else:
-                print("No")
+                print("no")
         else:
-            print("Yes")
+            print("yes")
     else:
-        print("No")
+        print("no")
 
 check_leap(year)
 
