@@ -1,8 +1,4 @@
 n=int(input())
-a=[]
-for i in range(2,n+1):
-    if n%i==0:
-        a.append(i)
 def check(num):
     c=0
 
@@ -13,11 +9,22 @@ def check(num):
         return True
     else:
         return False
-b=[]
-for i in a:
-    if(check(i)==True):
-        b.append(i)
-print(*b)
+if 2<=n<=100000:
+    a=[]
+    b=[]
+    for i in range(2,n+1):
+        if n%i==0:
+            a.append(i)
+    for i in a:
+        if (check(i) == True):
+            b.append(i)
+    print(*b)
+else:
+    print("invalid input")
+
+
+
+
 
 
 
